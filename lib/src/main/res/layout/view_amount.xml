@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llAmount"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:divider="@drawable/divider"
+    android:focusable="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:showDividers="middle">
+
+    <Button
+        android:id="@+id/btnDecrease"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@null"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:padding="0dp"
+        android:text="-"
+        android:textColor="@color/color_a7a7a7" />
+
+    <TextView
+        android:id="@+id/etAmount"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@null"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:minWidth="40dp"
+        android:text="1"
+        android:textColor="@color/color_666666" />
+
+    <Button
+        android:id="@+id/btnIncrease"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@null"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="+"
+        android:textColor="@color/color_f44b9b" />
+</LinearLayout>

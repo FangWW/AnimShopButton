@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="190dp"
+    android:layout_marginBottom="0dp"
+    android:layout_marginLeft="3dp"
+    android:layout_marginRight="3dp"
+    android:layout_marginTop="6dp"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="5dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/menuImg"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/timg"
+            app:layout_constraintBottom_toTopOf="@+id/titleTv"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="35dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:paddingLeft="10dp"
+            android:paddingTop="7.4dp"
+            android:textColor="@android:color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/addMenuImg"
+            tools:text="麻婆豆腐" />
+
+        <TextView
+            android:id="@+id/priceTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:paddingLeft="10dp"
+            android:paddingTop="3.6dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/addMenuImg"
+            app:layout_constraintTop_toBottomOf="@+id/titleTv"
+            tools:text="￥43" />
+
+
+        <com.w.animshopbutton.AmountView
+            android:id="@+id/addMenuImg"
+            android:layout_width="@dimen/amount_width_35"
+            android:layout_height="@dimen/amount_width_35"
+            android:layout_marginRight="10dp"
+            app:btnTextSize="@dimen/amount_size_25"
+            app:btnWidth="@dimen/amount_width_35"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/menuImg"
+            app:tvTextSize="@dimen/amount_size_18"
+            app:tvWidth="@dimen/amount_width_35" />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

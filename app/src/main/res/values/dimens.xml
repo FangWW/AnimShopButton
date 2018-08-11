@@ -1,0 +1,9 @@
+<resources>
+    <dimen name="amount_width_30">23dp</dimen>
+    <dimen name="amount_size_25">19dp</dimen>
+    <dimen name="amount_size_18">14dp</dimen>
+    <dimen name="amount_width_45">35dp</dimen>
+    <dimen name="amount_size_28">22dp</dimen>
+    <dimen name="amount_size_22">17dp</dimen>
+    <dimen name="amount_width_35">27dp</dimen>
+</resources>
